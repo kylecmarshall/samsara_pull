@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "samsarapull"
+version = "1.0.0"
+description = "A command-line tool to pull data from Samsara data APIs."
+requires-python = ">=3.11"
+dependencies = [
+  "requests"
+]
+
+[project.scripts]
+samsara-pull = "samsarapull:main_cli"
